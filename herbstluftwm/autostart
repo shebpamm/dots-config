@@ -15,13 +15,13 @@ hc keyunbind --all
 
 # keybindings
 # if you have a super key you will be much happier with Mod set to Mod4
-Mod=Mod1    # Use alt as the main modifier
-#Mod=Mod4   # Use the super key as the main modifier
+#Mod=Mod1    # Use alt as the main modifier
+Mod=Mod4   # Use the super key as the main modifier
 
 hc keybind $Mod-Shift-q quit
 hc keybind $Mod-Shift-r reload
-hc keybind $Mod-Shift-c close
-hc keybind $Mod-Return spawn "${TERMINAL:-xterm}" # use your $TERMINAL with xterm as fallback
+hc keybind $Mod-q close
+hc keybind $Mod-Return spawn "kitty" 
 
 # basic movement in tiling and floating mode
 # focusing clients
@@ -112,20 +112,20 @@ hc keybind $Mod-i jumpto urgent
 # theme
 hc attr theme.tiling.reset 1
 hc attr theme.floating.reset 1
-hc set frame_border_active_color '#222222cc'
-hc set frame_border_normal_color '#101010cc'
-hc set frame_bg_normal_color '#565656aa'
-hc set frame_bg_active_color '#345F0Caa'
-hc set frame_border_width 1
-hc set always_show_frame on
+hc set frame_border_active_color '#edb874'
+hc set frame_border_normal_color '#dcccb1'
+hc set frame_bg_normal_color '#000000'
+hc set frame_bg_active_color '#000000'
+hc set frame_border_width 2
+hc set always_show_frame off
 hc set frame_bg_transparent on
-hc set frame_transparent_width 5
-hc set frame_gap 4
+hc set frame_transparent_width 0
+hc set frame_gap 15
 
-hc attr theme.title_height 15
+hc attr theme.title_height 0
 hc attr theme.title_font 'Dejavu Sans:pixelsize=12'  # example using Xft
 # hc attr theme.title_font '-*-fixed-medium-r-*-*-13-*-*-*-*-*-*-*'
-hc attr theme.padding_top 2  # space below the title's baseline (i.e. text depth)
+hc attr theme.padding_top 0  # space below the title's baseline (i.e. text depth)
 hc attr theme.active.color '#345F0Cef'
 hc attr theme.title_color '#ffffff'
 hc attr theme.normal.color '#323232dd'
@@ -133,7 +133,7 @@ hc attr theme.urgent.color '#7811A1dd'
 hc attr theme.normal.title_color '#898989'
 hc attr theme.inner_width 1
 hc attr theme.inner_color black
-hc attr theme.border_width 3
+hc attr theme.border_width 1
 hc attr theme.floating.border_width 4
 hc attr theme.floating.outer_width 1
 hc attr theme.floating.outer_color black
@@ -148,7 +148,7 @@ done
 hc attr theme.active.outer_width 1
 hc attr theme.background_color '#141414'
 
-hc set window_gap 0
+hc set window_gap 15
 hc set frame_padding 0
 hc set smart_window_surroundings off
 hc set smart_frame_surroundings on
