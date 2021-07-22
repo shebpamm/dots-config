@@ -28,7 +28,8 @@ hc keybind $Mod-Shift-Return spawn "google-chrome-stable"
 hc keybind $Mod-d spawn rofi -show run
 
 
-hc keybind $Mod-n spawn ".config/herbstluftwm/toggle_frames"
+hc keybind $Mod-n spawn .config/herbstluftwm/toggle_set frame_border_width 2
+hc keybind $Mod-m spawn .config/herbstluftwm/toggle_gaps
 
 # basic movement in tiling and floating mode
 # focusing clients

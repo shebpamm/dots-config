@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Small utility to toggle between two states in herbst.
+
+#Defaults $small to 0 if no argument is specified
+small=$3
+small=${small:=0}
+
+
+#Check if value is greater than $small
+if [ $(herbstclient get $1) -gt $small ]
+then
+  herbstclient set $1 $small
+else
+  herbstclient set $1 $2
+fi

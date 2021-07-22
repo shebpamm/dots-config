@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+
+$script_dir/toggle_set frame_gap 15
+$script_dir/toggle_set window_gap 15 5
