@@ -6,3 +6,8 @@ Plug 'dylanaraps/wal.vim'
 call plug#end()
 
 colorscheme wal
+
+set number
+set tabstop=4
+set shiftwidth=4
+set expandtab
