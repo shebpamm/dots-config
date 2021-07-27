@@ -25,8 +25,14 @@ hc keybind $Mod-Shift-r reload
 hc keybind $Mod-q close
 hc keybind $Mod-Return spawn "kitty" 
 hc keybind $Mod-Shift-Return spawn "google-chrome-stable"
-hc keybind $Mod-d spawn rofi -show run
+hc keybind $Mod-d spawn rofi -show drun
 
+
+hc keybind XF86AudioRaiseVolume spawn dunst-volume up
+hc keybind XF86AudioLowerVolume spawn dunst-volume down
+
+hc keybind XF86MonBrightnessUp spawn dunst-brightness up
+hc keybind XF86MonBrightnessDown spawn dunst-brightness down
 
 hc keybind $Mod-n spawn .config/herbstluftwm/toggle_set frame_border_width 2
 hc keybind $Mod-m spawn .config/herbstluftwm/toggle_gaps
