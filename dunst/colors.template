@@ -1,0 +1,15 @@
+[urgency_low]
+  foreground = "${foreground}"
+  background = "${background}"
+  frame_color = "${color2}"
+[urgentcy_normal]
+  foreground = "${foreground}"
+  background = "${background}"
+  frame_color = "${color2}"
+
+[urgency_critical]
+  foreground = "${foreground}"
+  background = "${background}"
+  frame_color = "${color4}"
+
+
