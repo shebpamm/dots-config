@@ -34,7 +34,7 @@
     width = 200
     height = 500
 
-    
+    offset = 50x50
 
     # Turn on the progess bar
     progress_bar = true
